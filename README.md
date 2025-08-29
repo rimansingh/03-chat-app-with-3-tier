@@ -8,6 +8,9 @@ This project implements a full-stack chat application designed with a three-tier
 
 The entire application is orchestrated using docker and Kubernetes for local development and deployment.
 
+### Architecture Diagram
+![Architecture Diagram](screenshot/architecture.png)
+
 ## Project Structure
 
 - `backend/`: Contains the Node.js backend application.
@@ -198,6 +201,11 @@ docker build -t <your-dockerhub-username>/chatapp-backend:latest ./backend
 docker push <your-dockerhub-username>/chatapp-backend:latest
 kubectl apply -f k8s/backend-dp.yml
 ```
+
+## Screenshots
+
+### Chat Application Screenshot
+![Chat Application Screenshot](screenshot/chat.png)
 
 ### Frontend Deployment Errors (CrashLoopBackOff)
 
