@@ -1,0 +1,12 @@
+#persistant volume claim
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mongodb-persistent-volume-claim
+  namespace: chatapp
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi

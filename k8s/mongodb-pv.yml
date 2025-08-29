@@ -1,0 +1,13 @@
+#persistant volume
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: mongodb-persistent-volume
+  namespace: chatapp
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/data"
